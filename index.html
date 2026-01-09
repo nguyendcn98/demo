@@ -57,6 +57,7 @@
             position: absolute;
             top: 1rem;
             right: 1rem;
+
         }
         .nav-links {
             display: flex;
@@ -196,14 +197,14 @@
             margin-top: 1.25rem;
             position: fixed;
             bottom: 0;
-            width: 100%;
+            width: -webkit-fill-available;
         }
         @media (max-width: 768px) {
             .header { font-size: 1.5rem; }
             .nav-links { display: none; flex-direction: column; width: 100%; }
             .nav-links.active { display: flex; }
             .nav-menu a { margin: 0.625rem 0; font-size: 1rem; }
-            .hamburger { display: block; }
+            .hamburger { display: block; margin-top: -20px; }
             .button-grid { grid-template-columns: repeat(2, 1fr); }
             .section-title { font-size: 1rem; }
         }
