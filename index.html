@@ -301,7 +301,7 @@
                 });
             });
 
-            // Lưu trữ src gốc của các iframe khi tải trang để có thể dừng chúng sau này
+            // Lưu trữ src gốc của các iframe khi tải trang để có thể dừng chúng sau này 
             document.querySelectorAll('.button-item iframe').forEach(iframe => {
                 iframe.dataset.originalSrc = iframe.src.split('?')[0];
             });
